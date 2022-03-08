@@ -1,0 +1,23 @@
+Mar 05 23:35:23   -------------------------------------------------------------------------------------
+Mar 05 23:35:23   -- xfab180 v0.1
+Mar 05 23:35:23   -- call: xfab180 
+Mar 05 23:35:23   -------------------------------------------------------------------------------------
+Mar 05 23:35:30   load db/config from /usr/pack/designkits-1.0-ma/startup/db/software.ascii
+Mar 05 23:35:30   load db/config from /usr/pack/xfab-180-mp/dz/cockpit_xfab180/db/kit.ascii
+Mar 05 23:35:30   load db/config from /usr/pack/xfab-180-mp/dz/cockpit_xfab180/conf/default.ascii
+Mar 05 23:35:30   create directory technology
+Mar 05 23:35:30   create directory technology/lib
+Mar 05 23:35:30   create directory technology/db
+Mar 05 23:35:30   create directory docs
+Mar 05 23:35:30   create link ./docs/xp018-DR-v6_1_1.pdf -> /usr/pack/xfab-180-mp/dz/../xp018/documents/xp018-DR-v6_1_1.pdf
+Mar 05 23:35:30   create link ./docs/xp018-PDS-v6_1_1.pdf -> /usr/pack/xfab-180-mp/dz/../xp018/documents/xp018-PDS-v6_1_1.pdf
+Mar 05 23:35:30   create directory sourcecode
+Mar 05 23:35:30   create directory dfii
+Mar 05 23:35:30   create directory dfii/calibre_drc
+Mar 05 23:35:30   create directory dfii/calibre_lvs
+Mar 05 23:35:30   create directory dfii/calibre_pex
+Mar 05 23:35:30   copy /usr/pack/xfab-180-mp/dz/dfii/6/xkit to ./dfii/xkit
+Mar 05 23:35:30   copy /usr/pack/xfab-180-mp/dz/dfii/6/xlibd to ./dfii/xlibd
+Mar 05 23:35:30   copy /usr/pack/xfab-180-mp/dz/cockpit_xfab180/conf/default.ascii to .cockpitrc
+Mar 05 23:35:30   move /home/student14/.cockpit_loc.xfab180 to /home/student14/.cockpit_loc.xfab180~
+Mar 05 23:35:30   copy /home/student14/62R5gn0Hha (generated data dumped to tempfile) to /home/student14/.cockpit_loc.xfab180

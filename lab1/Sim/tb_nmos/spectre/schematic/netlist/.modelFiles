@@ -1,0 +1,7 @@
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/config.scs" section=default
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/param.scs" section=3s
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/bip.scs" section=tm
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/cap.scs" section=tm
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/dio.scs" section=tm
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/mos.scs" section=tm
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/res.scs" section=tm

@@ -1,0 +1,13 @@
+-v /usr/pack/xfab-180-mp/xp018/diglibs/D_CELLS_HDLL/v1_0/verilog/v1_0_0/D_CELLS_HDLL.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/IO_CELLS_FC1V8/v1_1/verilog/v1_1_0/IO_CELLS_FC1V8.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/D_CELLS_HDMV/v2_0/verilog/v2_0_0/D_CELLS_HDMV.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/IO_CELLS_FC5V/v1_1/verilog/v1_1_0/IO_CELLS_FC5V.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/D_CELLS_HD/v2_0/verilog/v2_0_0/D_CELLS_HD.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/D_CELLS_5V/v3_0/verilog/v3_0_0/D_CELLS_5V.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/IO_CELLS_C5V/v1_1/verilog/v1_1_0/IO_CELLS_C5V.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/IO_CELLS_5V/v2_1/verilog/v2_1_0/IO_CELLS_5V.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/IO_CELLS_JI5V/v2_2/verilog/v2_2_0/IO_CELLS_JI5V.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/IO_CELLS_F5V/v2_1/verilog/v2_1_0/IO_CELLS_F5V.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/IO_CELLS_C1V8/v1_1/verilog/v1_1_0/IO_CELLS_C1V8.v 
+-v /usr/pack/xfab-180-mp/xp018/diglibs/D_CELLS_M5V/v3_0/verilog/v3_0_0/D_CELLS_M5V.v 
++sdf_nocheck_celltype 

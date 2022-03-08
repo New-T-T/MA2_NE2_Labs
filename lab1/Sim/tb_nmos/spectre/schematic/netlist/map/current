@@ -1,0 +1,18 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "tb_nmos"
+  repList "spectre veriloga ahdl cmos_sch schematic"
+  stopList "spectre veriloga ahdl"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/student14/lab1/Sim/tb_nmos/spectre/schematic/netlist"
+ )
+( net
+( "gnd!" "0" )
+ )
+( model
+( "NE2/tb_nmos/schematic" "tb_nmos" )
+ )
+( "tb_nmos" "ihnl/cds0/map" )
+ )

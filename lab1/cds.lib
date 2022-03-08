@@ -1,0 +1,25 @@
+# ------------------------------------------------------------------------------
+# XKIT library definition files
+#   xp018.lib:
+#     - contains X-FAB XP018 Cadence library definitions 
+# 	 and must not be changed, exept with tkit -m|--modules
+#     - tkit -m|--modules overwrites this file, any changes will be lost.
+#   cds.lib:
+#     - includes xp018.lib
+#     - can contain customer specific library definitions
+#     xkit -m|--modules does NOT change an existing cds.lib.
+# ------------------------------------------------------------------------------
+
+
+# ------------------------------------------------------------------------------
+# XP018 Cadence library definitions
+
+# X-FAB library definitions
+INCLUDE ./xp018.lib
+
+# Library Manager Combine/Display Definitions
+INCLUDE ./xp018_combine.lib
+
+# ------------------------------------------------------------------------------
+# Add user specific libraries below this line 
+DEFINE NE2 /home/student14/lab1/NE2

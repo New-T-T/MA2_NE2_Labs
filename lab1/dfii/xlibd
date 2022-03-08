@@ -1,0 +1,9 @@
+#! /bin/csh -f
+
+# seting XKIT_ROOT_DIR
+setenv X_DIR /usr/pack/xfab-180-mp
+
+# seting XLIBD_INSTALL_PATH:  <directory> where XLIBD executable is located
+setenv XLIBD_INSTALL_PATH /usr/pack/xfab-180-mp/x_all/utilities/XLIBD/v2_0/bin/linux_x86_64/v2_0_5/bin/
+
+$XLIBD_INSTALL_PATH/../xlibd

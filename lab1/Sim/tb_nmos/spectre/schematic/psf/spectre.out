@@ -1,0 +1,535 @@
+
+Spectre (R) Circuit Simulator
+Version 18.1.0.421.isr9 64bit -- 17 Jul 2019
+Copyright (C) 1989-2019 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: student14   Host: ic-design.ini.uzh.ch   HostID: 3C820E68   PID: 17045
+Memory  available: 5.5784 GB  physical: 101.2064 GB
+Linux   : CentOS Linux release 7.6.1810 (Core) 
+CPU Type: Intel Core Processor (Broadwell)
+All processors running at 2097.6 MHz
+        Socket: Processors
+        0:       0
+        1:       1
+        2:       2
+        3:       3
+        4:       4
+        5:       5
+        6:       6
+        7:       7
+        8:       8
+        9:       9
+        10:     10
+        11:     11
+        12:     12
+        13:     13
+        14:     14
+        15:     15
+        
+System load averages (1min, 5min, 15min) : 106.9 %, 108.4 %, 108.8 %
+
+
+Simulating `input.scs' on ic-design.ini.uzh.ch at 12:05:22 AM, Sun Mar 6, 2022 (process id: 17045).
+Current working directory: /home/student14/lab1/Sim/tb_nmos/spectre/schematic/netlist
+Command line:
+    /usr/pack/cadence_mmsim-18.10.421-kgf/lnx86/tools.lnx86/bin/spectre  \
+        -64 input.scs +escchars +log ../psf/spectre.out -format psfxl  \
+        -raw ../psf +lqtimeout 900 -maxw 5 -maxn 5 -env ade
+
+Loading /usr/pack/cadence_mmsim-18.10.421-kgf/lnx86/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /usr/pack/cadence_mmsim-18.10.421-kgf/lnx86/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /usr/pack/cadence_mmsim-18.10.421-kgf/lnx86/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /usr/pack/cadence_mmsim-18.10.421-kgf/lnx86/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /usr/pack/cadence_mmsim-18.10.421-kgf/lnx86/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/student14/lab1/Sim/tb_nmos/spectre/schematic/netlist/input.scs
+Reading file:  /usr/pack/cadence_mmsim-18.10.421-kgf/lnx86/tools.lnx86/spectre/etc/configs/mapsubckt.cfg
+Reading file:  /usr/pack/cadence_mmsim-18.10.421-kgf/lnx86/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/config.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/param.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/bip.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/tm_bip.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpva.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpvb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpvc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpva5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpvb5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpvc5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qnva.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qnva5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qnvb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpvh.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpvhascr.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qnvc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qnvcra.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qnvcrb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpv_pa.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpv_pb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpv_pc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpv_pd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpv_pe.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpv_pf.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpv_pf2.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpv_pg.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qnl_pa.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qnl_pb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpl_pa.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/bip/qpl_pb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/cap.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/tm_cap.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csandwt3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csandwt4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csandwt5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csf2p.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csf3p.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csf3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csf4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csf5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csft4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csft5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csft6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csf3a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csf4a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csf5a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csft4a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csft5a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/csft6a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmm3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmm3t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmm4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmm4t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmm5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmm5t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmm6t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh3t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh3l.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh4t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh4l.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh5t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh5l.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh6t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cmmh6l.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmm4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmm4t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmmh4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmmh4t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmm5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmm5t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmmh5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmmh5t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmm6t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cdmmh6t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/ctmm5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/ctmm5t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/ctmmh5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/ctmmh5t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/ctmm6t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/ctmmh6t.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cp1sub.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cp1suba.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/cp1subp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/p_cap.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc_pmos.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvci_a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvci_b.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvci_d.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvci_m.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvci_nmos.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc5_pmos.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc5i_a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc5i_b.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc5i_d.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc5i_m.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/mosvc5i_nmos.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/tag_25v.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/tag_60v.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/tag_100v.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/tag_m25v.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/tag_m60v.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/cap/tag_m100v.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/dio.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/tm_dio.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dn.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dnn.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dnw.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dn5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dnn5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dp5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dnw5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/ddnwmv.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/ddnw15.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/ddnw25.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/ddnw60.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpdnwmv.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpdnw15.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpdnw25.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpdnw60.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dipdnwmv.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dipdnw15.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dipdnw25.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dipdnw60.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dnp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dsa.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dsaa.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dsaa_qp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dsb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dsba.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dsba_qp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dndd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpdddnw.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpdddnw_esd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpddipdnw_esd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dnddpb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dvdnw.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dvdnw_esd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/ddpbvdnw.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpd2dnw.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dndddpb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpddvdnw_esd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpddvdnw.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpddipvdnw_esd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dn5nm.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dp5pm.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dza_a.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dza_b.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dza_d.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dza_m.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/ddnwnvm.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dipdnwnvm.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpdnwnvm.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpsdnwnvm.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dpsdnwmv.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/dio/dn5ps.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/mos.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/tm_mos.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/ne.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nn.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nei.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nei_m_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nei_a_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nei_b_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nei_d_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pei.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pei_m_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pei_a_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pei_b_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pei_d_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pei_n_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5_mos1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5_mos2.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5i.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5i_mos1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5i_mos2.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5i_m_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5i_a_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5i_b_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nd5i_d_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nn5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nn5_jf.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/ne5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe5_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/ne5i.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/ne5i_m_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/ne5i_a_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/ne5i_b_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/ne5i_d_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe5i.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe5i_m_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe5i_a_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe5i_b_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe5i_d_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pe5i_n_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nede.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nede_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/neda.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/neda_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nedb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nedb_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nedc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nedc_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nedd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nedd_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pede.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pede_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/peda.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/peda_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pedb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pedb_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pedc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pedc_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pedd.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pedd_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmma.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmma_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmmb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmmb_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmb_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmmc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmmc_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nmc_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmma.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmma_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmmb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmmb_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmb.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmb_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmmc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmmc_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pmc_bjt.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/nel.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pel.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/pel_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/neli.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/neli_m_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/neli_a_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/neli_b_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/neli_d_6.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/peli.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/peli_m_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/peli_a_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/peli_b_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/mos/peli_d_5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/res.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/tm_res.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rdn.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rdp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rnw.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rnw_scr.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rdn5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rdn5_dpc.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rdp5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rnw5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rnw5_scr.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rdnwmv.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rnp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rnp1_3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rpp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rpp1_3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rpp1s.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rpp1s_3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rnp1h.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rnp1h_3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rpp1k1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rpp1k1_3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rm1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rm2.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rm3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rm4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rm5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rmtp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rmtpl.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rctdn.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rctdp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsildn.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsildp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rctp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsilnp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsilpp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsbdn.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsbdp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsbdn5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsbdp5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsbnp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsbpp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/rsbpp1k1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/pfuse.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rm1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rm2.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rm3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rm4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rm5.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rmtp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rmtpl.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rvia1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rvia2.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rvia3.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rvia4.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rviatp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rviatpl.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rctdn.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rctdp.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rctp1.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/p_rp1s.scs
+Reading file:  /usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/models/res/s_res.scs
+Time for NDB Parsing: CPU = 408.779 ms, elapsed = 686.29 ms.
+Time accumulated: CPU = 473.643 ms, elapsed = 686.296 ms.
+Peak resident memory used = 61 Mbytes.
+
+Time for Elaboration: CPU = 33 ms, elapsed = 33.843 ms.
+Time accumulated: CPU = 506.821 ms, elapsed = 720.315 ms.
+Peak resident memory used = 69.7 Mbytes.
+
+
+Warning from spectre during hierarchy flattening.
+    WARNING (SPECTRE-17101): The value 'psf' specified using the 'checklimitdest' option will no longer be supported in future releases.
+
+
+Time for EDB Visiting: CPU = 1.052 ms, elapsed = 1.05286 ms.
+Time accumulated: CPU = 508.081 ms, elapsed = 721.573 ms.
+Peak resident memory used = 70.3 Mbytes.
+
+
+Global user options:
+         psfversion = 1.1.0
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+           homotopy = 7
+              limit = delta
+         compatible = spice2
+               gmin = 1e-15
+             rforce = 1
+           maxnotes = 5
+           maxwarns = 5
+             digits = 5
+               cols = 80
+             pivrel = 0.001
+           sensfile = ../psf/sens.output
+     checklimitdest = psf
+               save = allpub
+             reltol = 0.0001
+               tnom = 27
+             scalem = 1
+              scale = 1
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 2
+             iprobe 1     
+            bsim3v3 1     
+            vsource 2     
+
+Analysis and control statement inventory:
+                 dc 1     
+               info 6     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 5.502 ms, elapsed = 8.54206 ms.
+Time accumulated: CPU = 513.736 ms, elapsed = 730.269 ms.
+Peak resident memory used = 72.1 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+
+**********************************
+DC Analysis `dc': vds = (0 -> 1.8)
+**********************************
+
+Opening the PSF file ../psf/dc.dc ...
+Important parameter values:
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 fS
+    dc: vds = 72e-03         (4 %), step = 36e-03          (2 %)
+    dc: vds = 108e-03        (6 %), step = 36e-03          (2 %)
+    dc: vds = 144e-03        (8 %), step = 36e-03          (2 %)
+    dc: vds = 180e-03       (10 %), step = 36e-03          (2 %)
+    dc: vds = 216e-03       (12 %), step = 36e-03          (2 %)
+    dc: vds = 252e-03       (14 %), step = 36e-03          (2 %)
+    dc: vds = 288e-03       (16 %), step = 36e-03          (2 %)
+    dc: vds = 324e-03       (18 %), step = 36e-03          (2 %)
+    dc: vds = 360e-03       (20 %), step = 36e-03          (2 %)
+    dc: vds = 396e-03       (22 %), step = 36e-03          (2 %)
+    dc: vds = 432e-03       (24 %), step = 36e-03          (2 %)
+    dc: vds = 468e-03       (26 %), step = 36e-03          (2 %)
+    dc: vds = 504e-03       (28 %), step = 36e-03          (2 %)
+    dc: vds = 540e-03       (30 %), step = 36e-03          (2 %)
+    dc: vds = 576e-03       (32 %), step = 36e-03          (2 %)
+    dc: vds = 612e-03       (34 %), step = 36e-03          (2 %)
+    dc: vds = 648e-03       (36 %), step = 36e-03          (2 %)
+    dc: vds = 684e-03       (38 %), step = 36e-03          (2 %)
+    dc: vds = 720e-03       (40 %), step = 36e-03          (2 %)
+    dc: vds = 756e-03       (42 %), step = 36e-03          (2 %)
+    dc: vds = 792e-03       (44 %), step = 36e-03          (2 %)
+    dc: vds = 828e-03       (46 %), step = 36e-03          (2 %)
+    dc: vds = 864e-03       (48 %), step = 36e-03          (2 %)
+    dc: vds = 900e-03       (50 %), step = 36e-03          (2 %)
+    dc: vds = 936e-03       (52 %), step = 36e-03          (2 %)
+    dc: vds = 972e-03       (54 %), step = 36e-03          (2 %)
+    dc: vds = 1.008         (56 %), step = 36e-03          (2 %)
+    dc: vds = 1.044         (58 %), step = 36e-03          (2 %)
+    dc: vds = 1.08          (60 %), step = 36e-03          (2 %)
+    dc: vds = 1.116         (62 %), step = 36e-03          (2 %)
+    dc: vds = 1.152         (64 %), step = 36e-03          (2 %)
+    dc: vds = 1.188         (66 %), step = 36e-03          (2 %)
+    dc: vds = 1.224         (68 %), step = 36e-03          (2 %)
+    dc: vds = 1.26          (70 %), step = 36e-03          (2 %)
+    dc: vds = 1.296         (72 %), step = 36e-03          (2 %)
+    dc: vds = 1.332         (74 %), step = 36e-03          (2 %)
+    dc: vds = 1.368         (76 %), step = 36e-03          (2 %)
+    dc: vds = 1.404         (78 %), step = 36e-03          (2 %)
+    dc: vds = 1.44          (80 %), step = 36e-03          (2 %)
+    dc: vds = 1.476         (82 %), step = 36e-03          (2 %)
+    dc: vds = 1.512         (84 %), step = 36e-03          (2 %)
+    dc: vds = 1.548         (86 %), step = 36e-03          (2 %)
+    dc: vds = 1.584         (88 %), step = 36e-03          (2 %)
+    dc: vds = 1.62          (90 %), step = 36e-03          (2 %)
+    dc: vds = 1.656         (92 %), step = 36e-03          (2 %)
+    dc: vds = 1.692         (94 %), step = 36e-03          (2 %)
+    dc: vds = 1.728         (96 %), step = 36e-03          (2 %)
+    dc: vds = 1.764         (98 %), step = 36e-03          (2 %)
+    dc: vds = 1.8          (100 %), step = 36e-03          (2 %)
+
+Maximum value achieved for any signal of each quantity: 
+V: V(Vds) = 1.8 V
+I: I(M0:1) = 268.5 pA
+DC simulation time: CPU = 54.56 ms, elapsed = 32.289 ms.
+
+Notice from spectre at vds = 1.8 during DC analysis `dc'.
+    The value of parameter 'vds' has been reset to the original value 1.8.
+
+Total time required for dc analysis `dc': CPU = 54.643 ms, elapsed = 32.367 ms.
+Time accumulated: CPU = 576.186 ms, elapsed = 769.711 ms.
+Peak resident memory used = 74.6 Mbytes.
+
+modelParameter: writing model parameter values to rawfile.
+
+Opening the PSF file ../psf/modelParameter.info ...
+element: writing instance parameter values to rawfile.
+
+Opening the PSF file ../psf/element.info ...
+outputParameter: writing output parameter values to rawfile.
+
+Opening the PSF file ../psf/outputParameter.info ...
+designParamVals: writing netlist parameters to rawfile.
+
+Opening the PSFASCII file ../psf/designParamVals.info ...
+primitives: writing primitives to rawfile.
+
+Opening the PSFASCII file ../psf/primitives.info.primitives ...
+subckts: writing subcircuits to rawfile.
+
+Opening the PSFASCII file ../psf/subckts.info.subckts ...
+
+Aggregate audit (12:05:23 AM, Sun Mar 6, 2022):
+Time used: CPU = 624 ms, elapsed = 842 ms, util. = 74%.
+Time spent in licensing: elapsed = 28.2 ms.
+Peak memory used = 76.5 Mbytes.
+Simulation started at: 12:05:22 AM, Sun Mar 6, 2022, ended at: 12:05:23 AM, Sun Mar 6, 2022, with elapsed time (wall clock): 842 ms.
+spectre completes with 0 errors, 1 warning, and 2 notices.

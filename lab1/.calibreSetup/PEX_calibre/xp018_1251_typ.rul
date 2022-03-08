@@ -1,0 +1,273 @@
+// **************************************************************
+// *                                                            *
+// *                        CALIBRE XP018                       *
+// *                           - PEX -                          *
+// *                                                            *
+// **************************************************************
+// * Modules: LP5MOS MET5 METMID             
+// **************************************************************
+
+  #UNDEFINE MOS5
+  #DEFINE METAL3
+  #DEFINE METAL4
+  #DEFINE METAL5
+  #UNDEFINE METAL6
+  #DEFINE MIDMET
+  #UNDEFINE THKMET
+//#DEFINE pexCellLevelExtraction	//uncomment to activate. See readme for detailes
+
+
+INCLUDE /home/student14/lab1/.xkit/setup/xp018/mentor/calibre/xp018.rul
+
+
+
+//MIM 
+  cm = capm SIZE BY 0.1
+  CONNECT cm
+
+//DMIM    
+      cm21 = capm2 SIZE BY 0.1
+    cm22 = copy cm21
+    CONNECT cm21
+    CONNECT cm22
+  
+//DMIM3
+      cm21a = capm2a SIZE BY 0.1
+    cm22a = copy cm21a
+    CONNECT cm21a
+    CONNECT cm22a
+   
+//DMIM4
+      cm21b = capm2b SIZE BY 0.1
+    cm22b = copy cm21b
+    CONNECT cm21b
+    CONNECT cm22b
+      
+//TMIM
+      cm31 = capm3 SIZE BY 0.1
+    cm32 = copy cm31
+    cm33 = copy cm32
+    CONNECT cm31
+    CONNECT cm32
+    CONNECT cm33
+  
+//TMIM3
+      cm31a = capm3a SIZE BY 0.1
+    cm32a = copy cm31a
+    cm33a = copy cm32a
+    CONNECT cm31a
+    CONNECT cm32a
+    CONNECT cm33a
+  
+//MIM23
+  cm23f = capm23f SIZE BY 0.1
+  CONNECT cm23f
+
+
+//MIM34
+  cm34f = capm34f SIZE BY 0.1
+  CONNECT cm34f
+
+
+//MIM45
+  cm45f = capm45f SIZE BY 0.1
+  CONNECT cm45f
+
+
+//MIMH 
+  cmh = capmh SIZE BY 0.1
+  CONNECT cmh
+
+//DMIMH    
+      cmh21 = capmh2 SIZE BY 0.1
+    cmh22 = copy cmh21
+    CONNECT cmh21
+    CONNECT cmh22
+   
+//DMIMH3
+      cmh21a = capmh2a SIZE BY 0.1
+    cmh22a = copy cmh21a
+    CONNECT cmh21a
+    CONNECT cmh22a
+  
+//DMIMH4
+      cmh21b = capmh2b SIZE BY 0.1
+    cmh22b = copy cmh21b
+    CONNECT cmh21b
+    CONNECT cmh22b
+      
+//TMIMH
+      cmh31 = capmh3 SIZE BY 0.1
+    cmh32 = copy cmh31
+    cmh33 = copy cmh32
+    CONNECT cmh31
+    CONNECT cmh32
+    CONNECT cmh33
+  
+//TMIMH3
+      cmh31a = capmh3a SIZE BY 0.1
+    cmh32a = copy cmh31a
+    cmh33a = copy cmh32a
+    CONNECT cmh31a
+    CONNECT cmh32a
+    CONNECT cmh33a
+  
+//MIM23H
+  cmh23f = capmh23f SIZE BY 0.1
+  CONNECT cmh23f
+
+//MIM34H
+  cmh34f = capmh34f SIZE BY 0.1
+  CONNECT cmh34f
+
+//MIM45H
+  cmh45f = capmh45f SIZE BY 0.1
+  CONNECT cmh45f
+
+
+//CSANDWT*
+//convert device layer
+  csw3_d0 = bulk NOT d_cswt3 
+  csw3_dev = bulk NOT csw3_d0
+
+  csw4_d0 = bulk NOT d_cswt4 
+  csw4_dev = bulk NOT csw4_d0
+
+  csw5_d0 = bulk NOT d_cswt5 
+  csw5_dev = bulk NOT csw5_d0
+
+  shSwt3_1 = ((csw3_dev NOT csw4_dev) NOT csw5_dev) SIZE BY 0.1
+  shSwt3_2 = copy shSwt3_1
+  shSwt3_3 = copy shSwt3_2
+
+  shSwt4_1 = (csw4_dev NOT csw5_dev) SIZE BY 0.1
+  shSwt4_2 = copy shSwt4_1
+  shSwt4_3 = copy shSwt4_2
+  shSwt4_4 = copy shSwt4_3
+
+  shSwt5_1 = csw5_dev SIZE BY 0.1
+  shSwt5_2 = copy shSwt5_1
+  shSwt5_3 = copy shSwt5_2
+  shSwt5_4 = copy shSwt5_3
+  shSwt5_5 = copy shSwt5_4
+  
+  sh00    = shSwt3_1 or shSwt4_1
+  sh01    = sh00 or shSwt5_1
+  sh02    = bulk NOT sh01
+  shield0 = bulk NOT sh02
+  
+  sh05    = shSwt3_2 or shSwt4_2
+  sh06    = sh05 or shSwt5_2
+  sh07    = bulk NOT sh06
+  shield1 = bulk NOT sh07
+  
+  sh10    = shSwt3_3 or shSwt4_3
+  sh11    = sh10 or shSwt5_3
+  sh12    = bulk NOT sh11
+  shield2 = bulk NOT sh12
+  
+  sh20    = shSwt4_4 or shSwt5_4
+  sh21    = bulk NOT sh20
+  shield3 = bulk NOT sh21
+  
+  sh30    = bulk NOT shSwt5_5
+  shield4 = bulk NOT sh30
+
+CONNECT gat_ext
+
+LAYER PX_DIFF  1000
+LAYER PX_POLY1 1010
+LAYER PX_MET1  1011
+  LAYER PX_MET2  1012
+  LAYER PX_MET3  1013
+  LAYER PX_MET4  1014
+  LAYER PX_MET5  1015
+  LAYER PX_METTP 1020
+
+CONNECT PX_DIFF
+CONNECT PX_POLY1
+CONNECT PX_MET1
+  CONNECT PX_MET2
+  CONNECT PX_MET3
+  CONNECT PX_MET4
+  CONNECT PX_MET5
+  CONNECT PX_METTP 
+
+//mapping PEX layers
+PEX MAP PX_DIFF ndiff pdiff 
+PEX MAP PX_POLY1 p1trm csf_p1 
+PEX MAP PX_MET1 m1trm csf_m1   
+  PEX MAP PX_MET2 m2trm csf_m2  
+  PEX MAP PX_MET3 m3trm csf_m3 
+  PEX MAP PX_MET4 m4trm csf_m4 
+  PEX MAP PX_MET5 m5trm csf_m5 
+  PEX MAP PX_METTP mttrm csf_mt 
+
+//ignore intentional capacities
+PEX IGNORE CAPACITANCE ALL SUBSTRATE ndiff pdiff
+
+PEX IGNORE RESISTANCE csf_p1
+PEX IGNORE CAPACITANCE NEARBODY csf_p1
+
+PEX IGNORE RESISTANCE csf_m1
+PEX IGNORE CAPACITANCE NEARBODY csf_m1
+
+  PEX IGNORE RESISTANCE csf_m2
+  PEX IGNORE CAPACITANCE NEARBODY csf_m2
+
+  PEX IGNORE RESISTANCE csf_m3
+  PEX IGNORE CAPACITANCE NEARBODY csf_m3
+
+  PEX IGNORE RESISTANCE csf_m4
+  PEX IGNORE CAPACITANCE NEARBODY csf_m4
+
+  PEX IGNORE RESISTANCE csf_m5
+  PEX IGNORE CAPACITANCE NEARBODY csf_m5
+
+  PEX IGNORE RESISTANCE csf_mt
+  PEX IGNORE CAPACITANCE NEARBODY csf_mt
+
+PEX IGNORE CAPACITANCE ALL csf_p1 csf_m1 csf_m2 csf_m3 csf_m4 csf_m5 csf_mt 
+
+//VIAs
+PEX IGNORE CAPACITANCE NEARBODY VIA csf_p1 csf_m1
+PEX IGNORE CAPACITANCE ALL csf_p1 VIA csf_p1 csf_m1
+PEX IGNORE CAPACITANCE ALL csf_m1 VIA csf_p1 csf_m1
+
+  PEX IGNORE CAPACITANCE NEARBODY VIA csf_m1 csf_m2
+  PEX IGNORE CAPACITANCE ALL csf_m1 VIA csf_m1 csf_m2
+  PEX IGNORE CAPACITANCE ALL csf_m2 VIA csf_m1 csf_m2
+  
+  PEX IGNORE CAPACITANCE NEARBODY VIA csf_m2 csf_m3
+  PEX IGNORE CAPACITANCE ALL csf_m2 VIA csf_m2 csf_m3
+  PEX IGNORE CAPACITANCE ALL csf_m3 VIA csf_m2 csf_m3
+  
+  PEX IGNORE CAPACITANCE NEARBODY VIA csf_m3 csf_m4
+  PEX IGNORE CAPACITANCE ALL csf_m3 VIA csf_m3 csf_m4
+  PEX IGNORE CAPACITANCE ALL csf_m4 VIA csf_m3 csf_m4
+  
+  PEX IGNORE CAPACITANCE NEARBODY VIA csf_m4 csf_m5
+  PEX IGNORE CAPACITANCE ALL csf_m4 VIA csf_m4 csf_m5
+  PEX IGNORE CAPACITANCE ALL csf_m5 VIA csf_m4 csf_m5
+  
+
+      PEX IGNORE CAPACITANCE NEARBODY VIA csf_m5 csf_mt
+    PEX IGNORE CAPACITANCE ALL csf_m5 VIA csf_m5 csf_mt
+    PEX IGNORE CAPACITANCE ALL csf_mt VIA csf_m5 csf_mt
+    
+  
+PEX GROUND LAYER nwtrm pwitrm nddtrm dnwtrm BULK 
+
+#ifdef  pexCellLevelExtraction
+  #define XCALIBRATE_EXCLUDE_PROFILE_active
+  #define XCALIBRATE_EXCLUDE_PROFILE_gate
+#endif
+CAPACITANCE ORDER PX_DIFF gat_ext gate PX_POLY1 shield0 PX_MET1 shield1 PX_MET2 shield2 cm23f cmh23f cm21 cmh21 cm31 cmh31 PX_MET3 shield3 cm34f cmh34f cm22 cmh22 cm21a cmh21a cm32 cmh32 cm31a cmh31a PX_MET4 shield4 cm45f cmh45f cm22a cmh22a cm21b cmh21b cm33 cmh33 cm32a cmh32a PX_MET5 cm cmh cm22b cmh22b cm33a cmh33a PX_METTP  
+
+
+INCLUDE /home/student14/lab1/.xkit/setup/xp018/mentor/PEX_calibre/xp018_xx51_MET5_METMID_typ.C
+INCLUDE /home/student14/lab1/.xkit/setup/xp018/mentor/PEX_calibre/xp018_xx51_MET5_METMID_typ.R
+  
+
+
+

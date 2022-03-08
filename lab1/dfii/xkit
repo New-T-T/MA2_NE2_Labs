@@ -1,0 +1,13 @@
+#! /bin/csh -f
+
+# seting XKIT_ROOT_DIR
+setenv X_DIR /usr/pack/xfab-180-mp/
+
+## the variables to be set
+setenv CDS_Netlisting_Mode "Analog"
+
+# seting for Mentor Calibre
+setenv MGC_HOME /usr/pack/calibre-2019.2-bt/aoi_cal_2019.2_26.18
+setenv MGLS_LICENSE_FILE `perl -ne 'm/^([0-9]+@\S*)/;print $1' /usr/sepp/var/calibre-2019.2-bt/license.setup`
+
+cds_ic-6.18.050 $X_DIR/x_all/cadence/xenv/xkit $argv

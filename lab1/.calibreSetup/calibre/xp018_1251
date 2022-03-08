@@ -1,0 +1,22 @@
+// ***************************************************************
+// *                                                             *
+// *                        CALIBRE XP018                        *
+// *                        - DRC / LVS -                        *
+// *                                                             *
+// *                   LP5MOS /  MET5 / METMID                   *
+// *                                                             *
+// ***************************************************************
+
+TITLE " XP018 Calibre DRC/LVS File : LP5MOS / MET5 / METMID "
+
+#UNDEFINE MOS5
+#DEFINE METAL3
+#DEFINE METAL4
+#DEFINE METAL5
+#UNDEFINE METAL6
+#DEFINE MIDMET
+#UNDEFINE THKMET
+#UNDEFINE XFAB_IP_BBOX_ANTENNA
+INCLUDE /home/student14/lab1/.xkit/setup/xp018/mentor/calibre/xp018.rul
+
+

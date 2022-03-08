@@ -1,0 +1,39 @@
+// Generated for: spectre
+// Generated on: Mar  5 23:55:51 2022
+// Design library name: NE2
+// Design cell name: tb_nmos
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters vds=1.8 vgs=200m
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/config.scs" section=default
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/param.scs" section=3s
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/bip.scs" section=tm
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/cap.scs" section=tm
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/dio.scs" section=tm
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/mos.scs" section=tm
+include "/usr/pack/xfab-180-mp/xp018/cadence/v6_1/spectre/v6_1_5/lp5mos/res.scs" section=tm
+
+// Library name: NE2
+// Cell name: tb_nmos
+// View name: schematic
+M0 (Vds Vgs 0 0) ne w=2u l=180.0n as=9.6e-13 ad=9.6e-13 ps=4.96e-06 \
+        pd=4.96e-06 nrs=0.135 nrd=0.135 m=(1)*(1) par1=((1)*(1)) \
+        xf_subext=0
+V1 (Vgs 0) vsource dc=vgs type=dc
+V0 (Vds 0) vsource dc=vds type=dc
+simulatorOptions options psfversion="1.1.0" reltol=100e-6 vabstol=1e-6 \
+    iabstol=1e-12 temp=27 tnom=27 homotopy=all limit=delta scalem=1.0 \
+    scale=1.0 compatible=spice2 gmin=1e-15 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+dc dc param=vds start=0 stop=1.8 write="spectre.dc" oppoint=rawfile \
+    maxiters=150 maxsteps=10000 annotate=status 
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts where=rawfile
+save M0:1 
+saveOptions options save=allpub
